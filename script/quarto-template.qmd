@@ -1,0 +1,28 @@
+---
+title: "template"
+author: "Wei"
+date: 2024-02-05
+format:
+  html:
+   toc: true # 目录
+editor: visual
+execute: 
+  echo: false #代码显示
+  cache: false # 缓存
+  warning: false
+  error: false
+---
+
+```{r}
+# 加载包
+require(tidyverse)
+require(janitor)
+require(here)
+require(gtsummary)
+require(readxl)
+
+# 设定主题
+setwd(here()) # quarto必须加这一步
+# 加载函数
+source(("script/00-my-functions.R"))
+```
